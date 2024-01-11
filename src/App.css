@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #7bdaf3;
+  font-family: "Poppins", sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #9ec862;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add:active {
+  transform: scale(0.98);
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 300px;
+  width: 300px;
+}
+
+.note .tools {
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
 }
