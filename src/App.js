@@ -40,9 +40,6 @@ const App = () => {
             <button className="plus" onClick={handleNoteClick}>
               <i className="fas fa-plus"></i>
             </button>
-            <button className="edit">
-              <i className="fas fa-edit"></i>
-            </button>
             <button className="delete" onClick={() => handleDelete(note.id)}>
               <i className="fas fa-trash-alt"></i>
             </button>

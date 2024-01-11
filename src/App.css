@@ -46,7 +46,7 @@ body {
 .note .tools {
   background-color: #9ec862;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0.5rem;
 }
 
@@ -64,8 +64,9 @@ body {
   font-family: inherit;
   font-size: 1.2rem;
   border: none;
-  height: 400px;
-  width: 100%;
+  min-height: 300px;
+  min-width: 100%;
+  max-width: 100%;
   padding: 20px;
 }
 
